@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhaiya - Developer Portfolio</title>
+    <link rel="icon" href="site_logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(1, 1, 24);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(14, 14, 59);
+            height: 60px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            font-size: 15px;
+            color: green;
+        }
+
+
+        .left {
+            font-size: 1.4rem;
+        }
+
+
+
+        /* ######### First Section ######## */
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 100px;
+            margin-bottom: 50px;
+        }
+
+        .firstsection < div {
+            width: 30%;
+        }
+
+        .leftsection {
+            margin: 49px 0;
+            font-size: 2rem;
+        }
+
+        .leftsection .btn {
+            padding: 4px 7px;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 17px;
+            cursor: pointer;
+            background-color: rgb(53, 23, 82);
+            text-decoration: none;
+        }
+
+        .leftsection .btn a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .leftsection .btn:hover {
+            font-size: medium;
+
+
+        }
+
+        .rightsection {
+            margin: 23px 0;
+
+        }
+
+        .rightsection img {
+            height: 250px;
+            width: 490px;
+            border: 0.6px;
+            border-radius: 10px 20px 10px 20px;
+
+        }
+
+        .purple {
+            color: blueviolet;
+        }
+
+        #element {
+            color: blueviolet;
+        }
+
+        main hr {
+            border: solid;
+            background-color: blueviolet;
+            margin-bottom: 20px;
+        }
+
+
+        /* ######### Second Section ######## */
+
+        .secondsection {
+            width: 89vw;
+            margin: auto;
+            height: 90VH;
+        }
+
+        .secondsection .horizontal_line {
+            background-color: white;
+            height: 1px;
+            width: 80vw;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondsection .verticle_line {
+            height: 90px;
+            width: 1px;
+            background-color: wheat;
+            margin: 0 120px;
+        }
+
+        .secondsection .verticle_line img {
+            width: 22px;
+            position: relative;
+            top: -27px;
+            left: -8px;
+
+        }
+
+        .secondsection .verticle_line .verticle_title {
+            position: relative;
+            top: 72px;
+            width: 140px;
+        }
+
+        .secondsection .verticle_line .verticle-desc {
+            position: relative;
+            top: 80px;
+            width: 190px;
+            font-size: 12px;
+            color: grey;
+        }
+
+
+        /* ######### third Section ######## */
+
+        .thirdsection {
+            width: 89vw;
+            margin: auto;
+            height: 80Vh
+        }
+
+        .thirdsection .skills {
+            text-align: center;
+        }
+
+        .thirdsection ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .thirdsection .skill_div {
+            height: 50vh;
+            width: 160vh;
+            margin: 23px 0;
+            margin-left: 70px;
+
+        }
+
+        .thirdsection .skill_div .skill_list {
+            border: solid;
+            border-radius: 10px 20px 10px 20px;
+            width: 300px;
+            height: 40px;
+            margin: 30px 8px;
+            text-align: center;
+            padding-top: 15px;
+            background-color: rgb(148, 144, 144);
+            color: black;
+            font-weight: bold;
+        }
+
+        .thirdsection ul li {
+            list-style: none;
+        }
+
+
+
+        /* ######### Fourth Section ######## */
+
+        .fourthsection {
+            width: 89vw;
+            margin: auto;
+            height: 80Vh;
+            background-color: rgb(6, 6, 34);
+            margin-bottom: 20px;
+        }
+
+        .fourthsection .heading {
+            text-align: center;
+            margin: 26px 23px;
+            padding-top: 23px;
+        }
+
+        .fourthsection img {
+            width: 60px;
+            height: 53px;
+        }
+
+        .fourthsection .education {
+            margin: 0 33px;
+        }
+
+        .fourthsection .line {
+            background-color: rgb(70, 66, 66);
+            height: 1px;
+            width: 80vw;
+            margin: 15px 0;
+        }
+
+        .footer {
+            width: 100%;
+            margin: auto;
+            height: 50Vh;
+            text-align: center;
+            background-color: rgb(230, 100, 74);
+            color: black;
+        }
+
+        .footer .footer_div {
+            padding-top: 23px;
+        }
+
+        .footer .footer_list ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer .footer_list ul li {
+            list-style: none;
+            margin: 18px 22px;
+        }
+
+        .footer .footer_list img {
+            width: 46px;
+            height: 40px;
+            border-radius: 98%;
+        }
+
+        .footer .footer_list img:hover {
+            width: 40px;
+            height: 35px;
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                font-size: 14px;
+            }
+        }
+        @media screen and (max-width: 375px) {
+            body {
+                font-size: 12px;
+            }
+        }@media screen and (max-width: 375px) {
+            body {
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Bhaiya's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#Project">Project</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="firstsection">
+            <div class="leftsection">
+                Hi, My Name is <span class="purple">Bhaiya Patil</span>
+                <div>and i am a passionate
+                </div>
+                <span id="element"></span>
+                <div>
+                    <button class="btn"><a href="Nivrutti_Tangade_Resume.pdf">Download Resume</a> </button>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="devpng.gif" alt="">
+
+            </div>
+        </section>
+        <hr>
+        <section id="Project" class="secondsection">
+            <span>all my project using different language.</span>
+            <h1>Project</h1>
+            <div class="horizontal_line">
+                <div class="verticle_line">
+                    <img src="python_img.png" alt="">
+                    <div class="verticle_title">Grocery Application</div>
+                    <div class="verticle-desc">In this Grocery store Management Systems designed to provide the grocery
+                        stores with benefit of having everything online, from products data to customers data.It helps
+                        the store managers to perform various functions like checking the product stock, suppliers
+                        informationand also allows them to check particular product is available or not.</div>
+                </div>
+                <div class="verticle_line">
+                    <img src="django.png" alt="">
+                    <div class="verticle_title">IT Class Site with Authentication</div>
+                    <div class="verticle-desc">in this project we add user's data in our database
+                        using django Authentication system. the built-in authentication system ensures that only
+                        authorized
+                        users can access. also we fetch data from the database and making it available to on webpage.
+                    </div>
+                </div>
+                <div class="verticle_line">
+                    <img src="js.jpg" alt="">
+                    <div class="verticle_title">Color Changer</div>
+                    <div class="verticle-desc">I has use in this basic project forEach function and EventListener of
+                        javascript.</div>
+                </div>
+                <div class="verticle_line">
+                    <img src="html.png" alt="">
+                    <div class="verticle_title">Food Application</div>
+                    <div class="verticle-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore quas
+                        quia ex nulla. Earum sequi distinctio, vel veniam optio, minus ipsum dolore cupiditate eveniet
+                        eos tenetur est iure, minima alias.</div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="skills" class="thirdsection">
+            <div class="skills">
+                <h1>Skills</h1>
+            </div>
+            <div class="skill_div">
+                <ul>
+                    <div class="skill_list">
+                        <li>python</li>
+                    </div>
+                    <div class="skill_list">
+                        <li>django</li>
+                    </div>
+                    <div class="skill_list">
+                        <li>HTML</li>
+                    </div>
+
+                    <div class="skill_list">
+                        <li>CSS</li>
+                    </div>
+                    <div class="skill_list">
+                        <li>Javascript</li>
+                    </div>
+                    <div class="skill_list">
+                        <li>SQL</li>
+                    </div>
+                </ul>
+            </div>
+        </section>
+        <hr>
+        <section id="education" class="fourthsection">
+            <div class="heading">
+                <h1>Education</h1>
+            </div>
+
+            <div class="education">
+                <img src="csmss.jpg" alt="">
+                <h4>BE MECHANICAL | 2016 - 2020 | CSMSS COLLEGE OF ENGINEERING, BAMU, CHH. SAMBHAJINAGAR.</h4>
+                <h5>CGPA: 6.50</h5>
+            </div>
+            <div class="line"></div>
+            <div class="education">
+                <img src="vivekanand.png" alt="">
+                <h4>HSC | 2014 - 2015 | VIVEKANAND COLLEGE, BAMU,CHH. SAMBHAJINAGAR</h4>
+                <h5>Percentage: 64.31%</h5>
+            </div>
+            <div class="line"></div>
+            <div class="education">
+                <img src="gurukul.jpg" alt="">
+                <h4>SSC | 2014 | SONDARA GURUKULAM DOMRI, BEED.</h4>
+                <h5>Percentage: 87.88%</h5>
+            </div>
+
+
+
+        </section>
+
+        <footer id="Contact" class="footer">
+
+            <div class="footer_div">
+                <h2>Let's work together</h2>
+            </div>
+            <br>
+            <div>
+                <h4>Contact: +91-7028301099</h4>
+                <h4>nivrutti1437@gmail.com</h4>
+            </div>
+            <div class="footer_list">
+                <ul>
+                    <li><a href="https://github.com/bhaiyapatil"><img src="github.png" alt=""></a></li>
+                    <li><a href="https://www.linkedin.com/in/nivrutti-tangade-0a1a36166/"><img src="linkdin.png"
+                                alt=""></a></li>
+                    <li><a href="https://www.instagram.com/_mr_bhaiya_patil/?next=%2F"><img src="insta.webp" alt=""></a>
+                    </li>
+                    <li><a href="https://www.naukri.com/mnjuser/profile"><img src="Facebook_img.png" alt=""></a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Thanks For Visiting!</h2>
+                <h4>Designed and Developed by Bhaiya Patil
+                    Copyright © 2023
+                </h4>
+            </div>
+        </footer>
+
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Front-end Developer', 'Back-end Developer', 'Full Stack Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+
+
+
+</body>
+
+</html>
